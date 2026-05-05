@@ -13,6 +13,7 @@ import UseStateHook from './StateMng.js/UseStateHook';
 import UseEffectHook from './StateMng.js/UseEffectHook';
 import TerneryOperatorUse from './TerneryOperator.js/TerneryOpe';
 import OnClickEvent from './EventsFold/onClickEve';
+import EventList from './EventsFold/eventLis';
 
 
 const user = {
@@ -33,6 +34,7 @@ const propsDestrObj = {
 function App() {
   return (
     <div>
+      <EventList/>
       <ComponentNew/>
       <Work/>
       <CssStyling/>
