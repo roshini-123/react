@@ -9,7 +9,7 @@ import DashboardObj from './donar-module/Dashboard';
 
 function App() {
   return (
-    <div className='w-screen h-screen dark:bg-gray-800 pt-6'> 
+    <div className='min-h-screen bg-slate-900 p-7'> 
       <HeaderObj/>
       <DashboardObj/>
       <FooterObj/>

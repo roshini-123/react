@@ -1,40 +1,50 @@
 import react from "react";
 import { CreditCard } from "lucide-react";
+import { FaQuestionCircle } from "react-icons/fa";
+
 
 
 
 const DashboardObj = () => {
     return(
-        <div className="w-1/2 h-90 bg-gradient-to-br from-blue-500 to-violet-500 rounded-3xl p-5 border border-white">
-            <div className="flex flex-row border border-black gap-3 items-center text-white h-20">
-                <CreditCard className="w-5 h-5 " />
-                <p>Master Card ****0469</p>
-            </div>
-            <div className="flex flex-row justify-between border border-black">
-                <div className="text-white flex flex-col gap-3">
-                    <h1 className="text-3xl">$9.75</h1>
-                    <p>Contributions This Month</p>
+        <div className="grid grid-cols-5 gap-7 border border-indigo-500 pt-5">
+             <div className="col-span-3 h-[360px] bg-gradient-to-br from-blue-500 to-violet-500 rounded-3xl border border-white p-8">
+                <div className="flex items-center gap-2 text-white pb-6">
+                    <CreditCard/>
+                    <p>Mastercard •••• 0469</p>
                 </div>
-                <div className= "items-right text-white flex flex-col gap-3">
+                <div className="grid grid-cols-2 h-20 text-white gap-3 mb-6">
+                    <div className="gap-2">
+                        <h1 className="text-5xl">$9.75</h1>
+                        <p className="pt-2">Contributions This Month</p>
+                    </div>
+                    <div className="flex flex-col items-end">
+                        <h1 className="text-3xl">$19.75</h1>
+                        <p className="mt-2">All Time Total</p>
+                    </div>
+                </div>
+
+                <div className="grid grid-cols-2 gap-8 pt-6 border-t border-white/20 text-white">
+                  <div>
                     <h1 className="text-2xl">$19.75</h1>
-                    <p>All Time Total</p>
+                    <p className="text-sm">Round-Up Donations</p>
+                  </div>
+                  <div>
+                    <div className="flex items-center gap-2">
+                        <h1 className="text-2xl">$0.00</h1>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-help w-4 h-4 text-blue-200"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><path d="M12 17h.01"></path></svg>
+                    </div>
+                    <p className="text-sm">Sponsor Rewards</p>
+                  </div>
+                
                 </div>
-
-            </div>
-            <hr className="text-white p-2 mt-3"></hr>
-            <div className="flex flex-row  border border-black">
-                <div className="flex-start border border-black">
-                    <h1>$19.75</h1>
-                    <p>Round-Up Donations</p>
                 </div>
-                <div className="text-white flex-center border border-black">
-                    <h1>$0.00</h1>
-                    <p >Sponsor Rewards</p>
-                </div>
-
-            </div>
-
+            <div className="col-span-2 rounded-3xl border border-white bg-slate-800">cjewnejnewjnwjn</div>
+            <div className="col-span-3 h-[500px] rounded-3xl border border-white bg-slate-800">cjewnejnewjnwjn</div>
+            <div className= "col-span-2 rounded-3xl border border-white bg-slate-800">cjewnejnewjnwjn</div>
+            <div className="col-span-5 h-[300px] rounded-3xl border border-white bg-slate-800">cjewnejnewjnwjn</div>
         </div>
+      
     )
 }
 
