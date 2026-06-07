@@ -7,8 +7,8 @@ import { FaQuestionCircle } from "react-icons/fa";
 
 const DashboardObj = () => {
     return(
-        <div className="grid grid-cols-5 gap-7 border border-indigo-500 pt-5">
-             <div className="col-span-3 h-[360px] bg-gradient-to-br from-blue-500 to-violet-500 rounded-3xl border border-white p-8">
+        <div className="grid grid-cols-5 gap-7 pt-5">
+             <div className="col-span-3 h-[360px] bg-gradient-to-br from-blue-500 to-violet-500 rounded-3xl  p-8">
                 <div className="flex items-center gap-2 text-white pb-6">
                     <CreditCard/>
                     <p>Mastercard •••• 0469</p>
@@ -39,7 +39,30 @@ const DashboardObj = () => {
                 
                 </div>
                 </div>
-            <div className="col-span-2 rounded-3xl border border-white bg-slate-800">cjewnejnewjnwjn</div>
+            <div className="col-span-2 rounded-3xl border border-slate-700 bg-slate-800 p-8">
+                <div className="flex justify-between mb-4 text-white">
+                    <h1 className="text-lg">Monthly Goal</h1>
+                    <span className="text-sm text-blue-400 hover:text-blue-300 font-medium">Edit</span>
+                </div>
+                <div>
+                    <div className="text-4xl text-white">
+                        $9
+                        <span className="text-2xl text-slate-500">  / $10</span>
+                    </div>
+                    <div className="flex gap-2 rounded-full border border-emerald-500/20 w-fit px-3 py-1.5 mt-4  bg-emerald-500/10 text-sm text-emerald-400 items-center">
+                        <div className="rounded-full bg-emerald-500 w-1.5 h-1.5"></div>
+                        <span>90% Complete</span>
+                    </div>
+                </div>
+                <div className="rounded-full mt-3 h-3 bg-slate-700 overflow-hidden">
+                    <div className="bg-gradient-to-r from-emerald-500 via-green-500 to-teal-500 h-full rounded-full" style={{width:"90%"}}></div>
+                </div>
+                <div className="text-sm text-slate-400 mt-3">$1.00 to reach your goal</div>
+                <div className="flex gap-2 pt-4 border-t border-slate-700 mt-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-target w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    <p className="text-emerald-500">You're exceeding your pace this month! Increasing your monthly goal, even by a small amount, fuels more support for your community.</p>
+                </div>
+            </div>
             <div className="col-span-3 h-[500px] rounded-3xl border border-white bg-slate-800">cjewnejnewjnwjn</div>
             <div className= "col-span-2 rounded-3xl border border-white bg-slate-800">cjewnejnewjnwjn</div>
             <div className="col-span-5 h-[300px] rounded-3xl border border-white bg-slate-800">cjewnejnewjnwjn</div>
