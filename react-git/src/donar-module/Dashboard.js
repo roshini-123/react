@@ -63,7 +63,41 @@ const DashboardObj = () => {
                     <p className="text-emerald-500">You're exceeding your pace this month! Increasing your monthly goal, even by a small amount, fuels more support for your community.</p>
                 </div>
             </div>
-            <div className="col-span-3 h-[500px] rounded-3xl border border-white bg-slate-800">cjewnejnewjnwjn</div>
+            <div className="col-span-3 h-[500px] rounded-3xl border border-white bg-slate-800 p-8">
+                <div className="flex justify-between">
+                    <div className="text-white text-lg flex gap-2 items-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart w-5 h-5 text-pink-400"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg>
+                        <h3>Your Impact</h3>
+                        </div>
+                    <span className="text-blue-400 hover:text-blue-300">View details</span>
+                </div>
+                <div className="grid grid-cols-4 gap-4 h-[40%]">
+                    <div className="border border-white bg-gradient-to-br from-blue-600 to-indigo-700 rounded-xl p-6
+                    text-white shadow-lg hover:shadow-xl hover:scale-105 transition-all items-center">
+                        <h1 className="text-4xl mb-2">3</h1>
+                        <p>Months Active</p>
+                    </div>
+                   <div className="border border-white bg-gradient-to-br from-emerald-600 to-teal-700 rounded-xl p-6 
+                    text-white shadow-lg hover:shadow-xl hover:scale-105 transition-all">
+                        <h1 className="text-4xl mb-2">$19.75</h1>
+                        <p>Total Donated</p>
+                    </div>
+                    <div className="border border-white  bg-gradient-to-br from-violet-600 to-purple-700 rounded-xl p-6
+                    text-white shadow-lg hover:shadow-xl hover:scale-105 transition-all">
+                        <h1 className="text-4xl mb-2">Top 30%</h1>
+                        <p>Among Donors</p>
+                    </div>
+                    <div className="border border-white bg-gradient-to-br from-rose-600 to-pink-700
+                    rounded-xl p-6
+                    text-white shadow-lg hover:shadow-xl hover:scale-105 transition-all">
+                        <h1 className="text-4xl mb-2">47</h1>
+                        <p>Transactions</p>
+                    </div>
+
+                </div>
+                <div></div>
+                <div></div>
+            </div>
             <div className= "col-span-2 rounded-3xl border border-white bg-slate-800">cjewnejnewjnwjn</div>
             <div className="col-span-5 h-[300px] rounded-3xl border border-white bg-slate-800">cjewnejnewjnwjn</div>
         </div>
