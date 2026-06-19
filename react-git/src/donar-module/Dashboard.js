@@ -7,13 +7,13 @@ import { FaQuestionCircle } from "react-icons/fa";
 
 const DashboardObj = () => {
     return(
-        <div className="grid grid-cols-5 gap-7 pt-5">
-             <div className="col-span-3 h-[360px] bg-gradient-to-br from-blue-500 to-violet-500 rounded-3xl  p-8">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-7 pt-5">
+             <div className="col-span-1 lg:col-span-3 h-auto bg-gradient-to-br from-blue-500 to-violet-500 rounded-3xl  p-8">
                 <div className="flex items-center gap-2 text-white pb-6">
                     <CreditCard/>
                     <p>Mastercard •••• 0469</p>
                 </div>
-                <div className="grid grid-cols-2 h-20 text-white gap-3 mb-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 text-white gap-6">
                     <div className="gap-2">
                         <h1 className="text-5xl">$9.75</h1>
                         <p className="pt-2">Contributions This Month</p>
@@ -24,7 +24,7 @@ const DashboardObj = () => {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-2 gap-8 pt-6 border-t border-white/20 text-white">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-6">
                   <div>
                     <h1 className="text-2xl">$19.75</h1>
                     <p className="text-sm">Round-Up Donations</p>
@@ -39,7 +39,7 @@ const DashboardObj = () => {
                 
                 </div>
                 </div>
-            <div className="col-span-2 rounded-3xl border border-slate-700 bg-slate-800 p-8">
+            <div className="col-span-1 lg:col-span-2 rounded-3xl border border-slate-700 bg-slate-800 p-8">
                 <div className="flex justify-between mb-4 text-white">
                     <h1 className="text-lg">Monthly Goal</h1>
                     <span className="text-sm text-blue-400 hover:text-blue-300 font-medium">Edit</span>
@@ -63,7 +63,7 @@ const DashboardObj = () => {
                     <p className="text-emerald-500">You're exceeding your pace this month! Increasing your monthly goal, even by a small amount, fuels more support for your community.</p>
                 </div>
             </div>
-            <div className="col-span-3 h-[500px] rounded-3xl border border-white bg-slate-800 p-8">
+            <div className="col-span-1 lg:col-span-3 rounded-3xl border border-white bg-slate-800 p-8">
                 <div className="flex justify-between">
                     <div className="text-white text-lg flex gap-2 items-center mb-6">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart w-5 h-5 text-pink-400"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg>
@@ -98,8 +98,8 @@ const DashboardObj = () => {
                 <div></div>
                 <div></div>
             </div>
-            <div className= "col-span-2 rounded-3xl border border-white bg-slate-800">cjewnejnewjnwjn</div>
-            <div className="col-span-5 h-[300px] rounded-3xl border border-white bg-slate-800">cjewnejnewjnwjn</div>
+            <div className= "col-span-1 lg:col-span-2 rounded-3xl border border-white bg-slate-800">cjewnejnewjnwjn</div>
+            <div className="col-span-1 lg:col-span-5 rounded-3xl border border-white bg-slate-800">cjewnejnewjnwjn</div>
         </div>
       
     )
