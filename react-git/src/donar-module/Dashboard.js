@@ -15,7 +15,7 @@ const DashboardObj = () => {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 text-white gap-6">
                     <div className="gap-2">
-                        <h1 className="text-5xl">$9.75</h1>
+                        <h1 className="text-3xl md:text-5xl">$9.75</h1> 
                         <p className="pt-2">Contributions This Month</p>
                     </div>
                     <div className="flex flex-col items-end">
@@ -24,7 +24,7 @@ const DashboardObj = () => {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-6 text-white">
                   <div>
                     <h1 className="text-2xl">$19.75</h1>
                     <p className="text-sm">Round-Up Donations</p>
@@ -71,35 +71,62 @@ const DashboardObj = () => {
                         </div>
                     <span className="text-blue-400 hover:text-blue-300">View details</span>
                 </div>
-                <div className="grid grid-cols-4 gap-4 h-[40%]">
+                <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
                     <div className="border border-white bg-gradient-to-br from-blue-600 to-indigo-700 rounded-xl p-6
                     text-white shadow-lg hover:shadow-xl hover:scale-105 transition-all items-center">
-                        <h1 className="text-4xl mb-2">3</h1>
+                        <h1 className="text-2xl md:text-4xl mb-2">3</h1>
                         <p>Months Active</p>
                     </div>
                    <div className="border border-white bg-gradient-to-br from-emerald-600 to-teal-700 rounded-xl p-6 
                     text-white shadow-lg hover:shadow-xl hover:scale-105 transition-all">
-                        <h1 className="text-4xl mb-2">$19.75</h1>
+                        <h1 className="text-2xl md:text-4xl mb-2">$19.75</h1>
                         <p>Total Donated</p>
                     </div>
                     <div className="border border-white  bg-gradient-to-br from-violet-600 to-purple-700 rounded-xl p-6
                     text-white shadow-lg hover:shadow-xl hover:scale-105 transition-all">
-                        <h1 className="text-4xl mb-2">Top 30%</h1>
+                        <h1 className="text-2xl md:text-4xl mb-2">Top 30%</h1>
                         <p>Among Donors</p>
                     </div>
                     <div className="border border-white bg-gradient-to-br from-rose-600 to-pink-700
                     rounded-xl p-6
                     text-white shadow-lg hover:shadow-xl hover:scale-105 transition-all">
-                        <h1 className="text-4xl mb-2">47</h1>
+                        <h1 className="text-2xl md:text-4xl mb-2">47</h1>
                         <p>Transactions</p>
                     </div>
 
                 </div>
-                <div></div>
-                <div></div>
+                <div className="bg-slate-700/50 border border-slate-600 mt-5 flex items-center gap-3 p-3 rounded-lg">
+                    <p className="text-slate-400 text-sm whitespace-nowrap">Supporting</p>
+                    <div className="w-10 h-10 md:w-12 md:h-12 bg-slate-100 rounded-lg flex-shrink-0 overflow-hidden">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODgiIGhlaWdodD0iODgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3Ryb2tlPSIjMDAwIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBvcGFjaXR5PSIuMyIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIzLjciPjxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjU2IiBoZWlnaHQ9IjU2IiByeD0iNiIvPjxwYXRoIGQ9Im0xNiA1OCAxNi0xOCAzMiAzMiIvPjxjaXJjbGUgY3g9IjUzIiBjeT0iMzUiIHI9IjciLz48L3N2Zz4KCg=="
+                         alt="Error loading image" 
+                         data-original-url="figma:asset/2240a843998406cb6ccee81ed802e92f71a033b7.png"
+                         className="w-full h-full object-cover"
+                         >
+                         </img>
+                    </div>
+                    <p className="text-white text-sm md:text-base break-words">Wreaths Across America</p>
+                </div>
+                <div className="bg-gradient-to-r from-cyan-900/50 to-teal-900/50 border-2 border-cyan-600/50 mt-5 flex gap-3 p-5 rounded-xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award w-6 h-6 text-cyan-400 flex-shrink-0 mt-0.5"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path><circle cx="12" cy="8" r="6"></circle></svg> 
+                    <div className="flex flex-col gap-2">
+                        <h1 className="text-cyan-300 font-medium">Milestone Achieved!</h1>
+                        <p className="text-cyan-200/80">You've reached your 3-month giving streak! Your consistent contributions are making a real difference.</p>
+                    </div>
+                </div>
             </div>
-            <div className= "col-span-1 lg:col-span-2 rounded-3xl border border-white bg-slate-800">cjewnejnewjnwjn</div>
-            <div className="col-span-1 lg:col-span-5 rounded-3xl border border-white bg-slate-800">cjewnejnewjnwjn</div>
+            <div className= "col-span-1 lg:col-span-2 rounded-3xl border border-white bg-slate-800 px-6 py-3.5 rounded-xl">
+                <h3 className="text-white text-lg mb-3">Quick Actions</h3>
+                <div className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 gap-3 flex text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tag w-5 h-5"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle></svg>
+                    <span>View Sponsor Offers</span>
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+
+            </div>
+            <div className="col-span-1 lg:col-span-5 h-[300px] rounded-3xl border border-white bg-slate-800">cjewnejnewjnwjn</div>
         </div>
       
     )
