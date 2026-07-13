@@ -2,7 +2,56 @@ import react from "react";
 import { CreditCard } from "lucide-react";
 import { FaQuestionCircle } from "react-icons/fa";
 
+const transactionsList = [
+    {
+        "org_name":"Drug Stores and Pharmacies",
+        "card_name":"Mastercard 0469",
+        "date_time":"Nov 01, 2025",
+        "amount":"+$0.22",
+        "type":"Round-up"
 
+    },
+        {
+        "org_name":"Drug Stores and Pharmacies",
+        "card_name":"Mastercard 0469",
+        "date_time":"Nov 01, 2025",
+        "amount":"+$0.22",
+        "type":"Round-up"
+
+    },
+        {
+        "org_name":"Drug Stores and Pharmacies",
+        "card_name":"Mastercard 0469",
+        "date_time":"Nov 01, 2025",
+        "amount":"+$0.22",
+        "type":"Round-up"
+
+    },
+        {
+        "org_name":"Drug Stores and Pharmacies",
+        "card_name":"Mastercard 0469",
+        "date_time":"Nov 01, 2025",
+        "amount":"+$0.22",
+        "type":"Round-up"
+
+    },
+        {
+        "org_name":"Drug Stores and Pharmacies",
+        "card_name":"Mastercard 0469",
+        "date_time":"Nov 01, 2025",
+        "amount":"+$0.22",
+        "type":"Round-up"
+
+    },
+        {
+        "org_name":"Drug Stores and Pharmacies",
+        "card_name":"Mastercard 0469",
+        "date_time":"Nov 01, 2025",
+        "amount":"+$0.22",
+        "type":"Round-up"
+
+    }
+]
 
 
 const DashboardObj = () => {
@@ -116,17 +165,54 @@ const DashboardObj = () => {
                 </div>
             </div>
             <div className= "col-span-1 lg:col-span-2 rounded-3xl border border-white bg-slate-800 px-6 py-3.5 rounded-xl">
-                <h3 className="text-white text-lg mb-3">Quick Actions</h3>
-                <div className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 gap-3 flex text-white">
+                <h3 className="text-white text-lg mb-5">Quick Actions</h3>
+                <div className="flex flex-col gap-4 mb-8">
+                       <div className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 gap-3 flex text-white rounded-xl p-3 pl-6">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tag w-5 h-5"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle></svg>
                     <span>View Sponsor Offers</span>
                 </div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div className="bg-violet-600/20 hover:bg-violet-600/30 text-violet-300 border border-violet-500/30 rounded-xl flex gap-3 p-3 pl-6 items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-target w-5 h-5"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    <span>Adjust Monthly Goal</span>
+                </div>
+                <div className="bg-slate-700 hover:bg-slate-600 text-slate-200 flex p-3 pl-6 gap-3 rounded-xl items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-credit-card w-5 h-5"><rect width="20" height="14" x="2" y="5" rx="2"></rect><line x1="2" x2="22" y1="10" y2="10"></line></svg>
+                    <span>Manage Payment Card</span>
+                </div>
+           
+                </div>
+                     <div className="bg-gradient-to-br from-violet-900/30 to-purple-900/30 border border-violet-500/20 p-5 rounded-xl">
+                    <div className="flex gap-2 mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles w-5 h-5 text-violet-400"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>
+                        <h2 className="text-sm text-violet-300 font-medium">Did you know?</h2>
+                    </div>
+                    <h2 className="text-sm text-violet-200/80 leading-relaxed">Local sponsors offer exclusive discounts to W8LESS donors. Check out available offers to save while giving!
+</h2>
+                </div>
+             
 
             </div>
-            <div className="col-span-1 lg:col-span-5 h-[300px] rounded-3xl border border-white bg-slate-800">cjewnejnewjnwjn</div>
+            <div className="col-span-1 lg:col-span-5 h-[300px] rounded-3xl border border-white bg-slate-800 p-6">
+                <div className="flex gap-2 items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up w-5 h-5 text-blue-400"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>
+                    <h3 className="text-white text-lg">Recent Transactions</h3>
+                </div>
+                <div className="border border-white p-4 mt-4">
+                    <div className="flex gap-2 border border-white">
+                        <div className="p-2 rounded-lg bg-gradient-to-br from-emerald-600/20 to-teal-600/20 border border-emerald-500/30">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dollar-sign w-5 h-5 text-emerald-400"><line x1="12" x2="12" y1="2" y2="22"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                        </div>
+                        <div>
+                            <h1>Drug Stores and Pharmacies</h1>
+                            <p>Nov 01, 2025 · Mastercard 0469</p>
+                        </div>
+                        <div>
+                            <p>+$0.22</p>
+                            <p>Round-up</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
       
     )
