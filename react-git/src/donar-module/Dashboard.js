@@ -12,42 +12,26 @@ const transactionsList = [
 
     },
         {
-        "org_name":"Drug Stores and Pharmacies",
+        "org_name":"Computer Programming Services",
         "card_name":"Mastercard 0469",
         "date_time":"Nov 01, 2025",
-        "amount":"+$0.22",
+        "amount":"+$1.00",
         "type":"Round-up"
 
     },
         {
-        "org_name":"Drug Stores and Pharmacies",
+        "org_name":"Computer Software Stores",
         "card_name":"Mastercard 0469",
         "date_time":"Nov 01, 2025",
-        "amount":"+$0.22",
+        "amount":"+$0.01",
         "type":"Round-up"
 
     },
         {
-        "org_name":"Drug Stores and Pharmacies",
+        "org_name":"Drinking Places (Bars & Taverns)",
         "card_name":"Mastercard 0469",
         "date_time":"Nov 01, 2025",
-        "amount":"+$0.22",
-        "type":"Round-up"
-
-    },
-        {
-        "org_name":"Drug Stores and Pharmacies",
-        "card_name":"Mastercard 0469",
-        "date_time":"Nov 01, 2025",
-        "amount":"+$0.22",
-        "type":"Round-up"
-
-    },
-        {
-        "org_name":"Drug Stores and Pharmacies",
-        "card_name":"Mastercard 0469",
-        "date_time":"Nov 01, 2025",
-        "amount":"+$0.22",
+        "amount":"+$0.38",
         "type":"Round-up"
 
     }
@@ -192,25 +176,50 @@ const DashboardObj = () => {
              
 
             </div>
-            <div className="col-span-1 lg:col-span-5 h-[300px] rounded-3xl border border-white bg-slate-800 p-6">
+            <div className="col-span-1 lg:col-span-5 rounded-3xl border border-white bg-slate-800 p-6">
                 <div className="flex gap-2 items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up w-5 h-5 text-blue-400"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>
                     <h3 className="text-white text-lg">Recent Transactions</h3>
                 </div>
-                <div className="border border-white p-4 mt-4">
-                    <div className="flex gap-2 border border-white">
-                        <div className="p-2 rounded-lg bg-gradient-to-br from-emerald-600/20 to-teal-600/20 border border-emerald-500/30">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dollar-sign w-5 h-5 text-emerald-400"><line x1="12" x2="12" y1="2" y2="22"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                <div>
+                    {transactionsList.map((transaction,index) =>(
+                          <div 
+                          key = {index}
+                          className="p-4 mt-4 rounded-xl hover:bg-slate-700/50 border border-transparent hover:border-slate-600">
+                            <div className="flex justify-between gap-2">
+                                <div className="gap-3 flex">
+                                    <div className="p-2 w-10 h-10 rounded-lg bg-gradient-to-br from-emerald-600/20 to-teal-600/20 border border-emerald-500/30 flex justify-center items-center">
+                                    <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeWidth="2"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    className="lucide lucide-dollar-sign w-5 h-5 text-emerald-400"
+                                    >
+                                    <line x1="12" x2="12" y1="2" y2="22" />
+                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                                    </svg>                                    </div>
+                                    <div>
+                                        <h1 className="text-white">{transaction.org_name}</h1>
+                                        <p className="text-gray-400 text-sm">{transaction.date_time}·{transaction.card_name}</p>
+                                    </div>
+                                </div>                        
+                                <div className="text-right">
+                                    <p className="text-emerald-400">{transaction.amount}</p>
+                                    <p className="text-xs text-slate-500">{transaction.type}</p>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <h1>Drug Stores and Pharmacies</h1>
-                            <p>Nov 01, 2025 · Mastercard 0469</p>
-                        </div>
-                        <div>
-                            <p>+$0.22</p>
-                            <p>Round-up</p>
-                        </div>
-                    </div>
+                    ) )} 
+                </div>
+                <div className="flex gap-2 p-2 items-center justify-center text-blue-400 hover:text-blue-300 hover:bg-slate-700/50 rounded-xl">
+                    <p>view all transactions</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
                 </div>
             </div>
         </div>
